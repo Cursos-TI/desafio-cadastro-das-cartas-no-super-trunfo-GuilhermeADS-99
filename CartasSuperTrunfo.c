@@ -25,28 +25,36 @@ int main(){
     //Dados da carta 1
 
     printf("Carta 1:\n");
+   
+    //Pedindo ao usuário que coloque a letra do Estado sendo de "A" a "H"
     printf("Estado: ");
     scanf("%s", &estado_1);
-
+    
+    //Pedindo ao usuário que coloque o código da carta 
     printf("Código: ");
     scanf("%s", &codigo_1);
     
+    //Pedindo ao usuário que coloque o nome da cidade
     printf("Nome da Cidade: ");
     scanf("%s", &cidade_1);
-
+    
+    //Pedindo ao usuário que coloque o número da população
     printf("População: ");
     scanf("%d", &populacao_1);
     
+    //Pedindo ao usuário que coloque a área em km²
     printf("Área: ");
     scanf("%f", &area_1);
-
+    
+    //Pedindo ao usuário que coloque o produto interno bruto da cidade
     printf("PIB: ");
     scanf("%f", &pib_1);
-
+   
+    //Pedindo ao usuário que coloque a quantidade de pontos turísticos 
     printf("Número de Pontos Turísticos:\n\n ");
     scanf("%d", &numero_1);
 
-    //Dados da carta 2
+    //Dados da carta 2, com os mesmos requisitos da carta 1
    
     printf("Carta 2: ");
     printf("Estado:\n "); 
