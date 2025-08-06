@@ -2,81 +2,100 @@
 
 int main(){
     
-    //Variáveis para carta 1
-   
-    char estado_1; // Variável para representar um estado com letra de A a H.
-    char codigo_1[30]; // Variável para o código da carta
-    char cidade_1[30];// Variável para o nome da cidade.
-    int populacao_1;// Variável para o número de habitantes
-    float area_1;//Variável da área em km²
-    float pib_1;// Variável para o produto interno bruto da cidade
-    int numero_1;// Variável para a quantidade de pontos turísticos
-
-    // Variáveis para carta 2
-
-    char estado_2; 
-    char codigo_2[30]; 
-    char cidade_2[30];
-    int populacao_2;
-    float area_2;
-    float pib_2;
-    int numero_2;
+    // Variáveis para carta 1
+    
+    char estado_1; //Variável para caracteres
+    char codigo_1[5]; // variável para string
+    char cidade_1[20]; // variável para string
+    float populacao_1, area_1, pib_1; // Variável para pontos flutuantes
+    int pontos_1; // Variável para inteiros
 
     //Dados da carta 1
-
+    
     printf("Carta 1:\n");
-   
-    //Pedindo ao usuário que coloque a letra do Estado sendo de "A" a "H"
+
     printf("Estado: ");
-    scanf("%s", &estado_1);
+    scanf("%c", &estado_1);
     
-    //Pedindo ao usuário que coloque o código da carta 
+    fflush(stdin); //Função para remover o buffer causado pelo scanf
+    
     printf("Código: ");
-    scanf("%s", &codigo_1);
+    scanf("%s", codigo_1);
     
-    //Pedindo ao usuário que coloque o nome da cidade
-    printf("Nome da Cidade: ");
-    scanf("%s", &cidade_1);
+    fflush(stdin);
+
+    printf("Nome da cidade: ");
+    scanf("%s", cidade_1);
     
-    //Pedindo ao usuário que coloque o número da população
+    fflush(stdin);
+
     printf("População: ");
-    scanf("%d", &populacao_1);
+    scanf("%f", &populacao_1);
     
-    //Pedindo ao usuário que coloque a área em km²
+    fflush(stdin);
+    
     printf("Área: ");
     scanf("%f", &area_1);
     
-    //Pedindo ao usuário que coloque o produto interno bruto da cidade
+    fflush(stdin);
+    
     printf("PIB: ");
     scanf("%f", &pib_1);
-   
-    //Pedindo ao usuário que coloque a quantidade de pontos turísticos 
-    printf("Número de Pontos Turísticos:\n\n ");
-    scanf("%d", &numero_1);
-
-    //Dados da carta 2, com os mesmos requisitos da carta 1
-   
-    printf("Carta 2: ");
-    printf("Estado:\n "); 
-    scanf("%s", &estado_2);
-
-    printf("Código: ");
-    scanf("%s", &codigo_2);
     
-    printf("Nome da Cidade: ");
-    scanf("%s", &cidade_2);
+    fflush(stdin);
+    
+    printf("Número de Pontos turísticos: ");
+    scanf("%d", &pontos_1);
+    
+    fflush(stdin);
+    
+    // Variáveis para carta 2
+   
+    char estado_2;
+    char codigo_2[5];
+    char cidade_2[20];
+    float populacao_2, area_2, pib_2;
+    int pontos_2;
+    
+    //Dados da carta 2
+   
+    printf("\n\nCarta 2:\n");
+
+    printf("Estado: ");
+    scanf("%c", &estado_2);
+    
+    fflush(stdin);
+    
+    printf("Código: ");
+    scanf("%s", codigo_2);
+    
+    fflush(stdin);
+
+    printf("Nome da cidade: ");
+    scanf("%s", cidade_2);
+    
+    fflush(stdin);
 
     printf("População: ");
-    scanf("%d", &populacao_2);
+    scanf("%f", &populacao_2);
+    
+    fflush(stdin);
+    
     printf("Área: ");
     scanf("%f", &area_2);
-
+    
+    fflush(stdin);
+    
     printf("PIB: ");
     scanf("%f", &pib_2);
-
-    printf("Número de Pontos Turísticos: ");
-    scanf("%d", &numero_2);
-
+    
+    fflush(stdin);
+    
+    printf("Número de Pontos turísticos: ");
+    scanf("%d", &pontos_2);
+    
+    fflush(stdin);
+   
     return 0;
 
 }
