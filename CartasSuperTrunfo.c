@@ -7,7 +7,7 @@ int main(){
     char estado_1; //Variável para caracteres
     char codigo_1[5]; // variável para string
     char cidade_1[20]; // variável para string
-    float populacao_1, area_1, pib_1; // Variável para pontos flutuantes
+    float populacao_1, area_1, pib_1, densidade_1, percapita_1; // Variável para pontos flutuantes
     int pontos_1; // Variável para inteiros
 
     //Dados da carta 1
@@ -48,13 +48,21 @@ int main(){
     scanf("%d", &pontos_1);
     
     fflush(stdin);
+
+    densidade_1 = populacao_1 / area_1;
+    percapita_1 = pib_1 / populacao_1;
+    
+    printf("Densidade populacional: %.15f\n", densidade_1);
+    printf("PIB per capita: %.15f\n", percapita_1);
+
+    fflush(stdin);
     
     // Variáveis para carta 2
    
     char estado_2;
     char codigo_2[5];
     char cidade_2[20];
-    float populacao_2, area_2, pib_2;
+    float populacao_2, area_2, pib_2, densidade_2, percapita_2;
     int pontos_2;
     
     //Dados da carta 2
@@ -95,7 +103,15 @@ int main(){
     scanf("%d", &pontos_2);
     
     fflush(stdin);
-   
+
+    densidade_2 = populacao_2 / area_2;
+    percapita_2 = pib_2 / populacao_2;
+    
+    printf("Densidade populacional: %.15f\n", densidade_2);
+    printf("PIB per capita: %.15f\n", percapita_2);
+
+    fflush(stdin);
+
     return 0;
 
 }
