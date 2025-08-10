@@ -18,7 +18,7 @@ int main(){
     printf("Estado: ");
     scanf("%c", &estado_1);
     
-    fflush(stdin); //Função para remover o buffer causado pelo scanf
+    fflush(stdin); //Função para remover o buffer causado no scanf
     
     printf("Código: ");
     scanf("%s", codigo_1);
@@ -50,8 +50,8 @@ int main(){
     
     fflush(stdin);
 
-    densidade_1 = populacao_1 / area_1;
-    percapita_1 = pib_1 / populacao_1;
+    densidade_1 = populacao_1 / area_1; //calcular a densidade populacional 
+    percapita_1 = pib_1 / populacao_1; // calcular o pib per capita
     
     printf("Densidade populacional: %.15f\n", densidade_1);
     printf("PIB per capita: %.15f\n", percapita_1);
@@ -70,7 +70,9 @@ int main(){
     //Dados da carta 2
    
     printf("\n\nCarta 2:\n");
-
+    
+    fflush(stdin);
+    
     printf("Estado: ");
     scanf("%c", &estado_2);
     
@@ -106,8 +108,8 @@ int main(){
     
     fflush(stdin);
 
-    densidade_2 = populacao_2 / area_2;
-    percapita_2 = pib_2 / populacao_2;
+    densidade_2 = populacao_2 / area_2; //calcular a densidade populacional 
+    percapita_2 = pib_2 / populacao_2; // calcular o pib per capita
     
     printf("Densidade populacional: %.15f\n", densidade_2);
     printf("PIB per capita: %.15f\n", percapita_2);
